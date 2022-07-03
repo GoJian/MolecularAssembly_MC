@@ -4,6 +4,7 @@
 #pragma once
 #include "MOB_Def.h"
 #include "FRAGHIST.h"
+#include <climits>
 #include <unordered_map>
 
 
