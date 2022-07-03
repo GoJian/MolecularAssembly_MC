@@ -1,0 +1,14 @@
+This Python demo program reads SD file and calls InChI library
+(libinchi.dll/libinchi.so.1) function MakeINCHIFromMolfileText()
+to generate InChI string (also generates InChIKey).
+Note: the example is provided for illustrative purposes only.
+
+Platform = Linux
+libinchi.so.1
+Loading InChI Software library libinchi.so.1
+..loaded.
+
+Processing test1.sdf
+
+Reading, please wait..
+..done.
