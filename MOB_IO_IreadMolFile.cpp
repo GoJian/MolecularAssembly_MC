@@ -1,4 +1,3 @@
-#pragma once
 #include "MOB_IO_IreadMolFile.h"
 
 namespace MOB_IO_IreadMolFile {

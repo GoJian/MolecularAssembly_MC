@@ -6,4 +6,4 @@
 #include "MOB.h"
 
 
-strType getInchi(MOL_BOND& mol);
+strType mol2inchi(MOL_BOND& mol);

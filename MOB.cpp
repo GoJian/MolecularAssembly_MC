@@ -588,14 +588,14 @@ int MOL_BOND::importData(strType& molPATH, std::vector<MOL_BOND>& outputMolVec) 
 		return 0;
 	}
 	else if (molList.size() == 1) {
-		molList[0].inchi = getInchi(molList[0]);
+		molList[0].inchi = mol2inchi(molList[0]);
 		molList[0].nAtomsIncludeH = getTotalNumAtoms(molList[0], molList[0].inchi);
 		outputMolVec = molList;
 		return 1;
 	}
 	else { // molList.size() >= 2
 		for (MOL_BOND& mol : molList) {
-			mol.inchi = getInchi(mol);
+			mol.inchi = mol2inchi(mol);
 			mol.nAtomsIncludeH = getTotalNumAtoms(mol, mol.inchi);
 		}
 		outputMolVec = molList;
@@ -709,7 +709,7 @@ std::vector<std::tuple<strType, strType, unsigned long long int>> MOL_BOND::cut_
 			}
 		}
 
-		histItem.push_back(std::make_tuple(getInchi(frag0), identifier, M0));
+		histItem.push_back(std::make_tuple(mol2inchi(frag0), identifier, M0));
 		it++;
 	}
 	return histItem;
