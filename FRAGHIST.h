@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include <set>
 #include <vector>
+#include <string>
 typedef unsigned long long int MYINT;
 const long double z_quantile_Wilson_score = 1.96;
 const double Hist_Err_Threshold = 0.05;

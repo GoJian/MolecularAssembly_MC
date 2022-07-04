@@ -1,10 +1,11 @@
+#include <cstring>
 #include "MOB_Inchi.h"
-#include "inchi_api.h"
+#include "INCHI-1-SRC/INCHI_BASE/src/inchi_api.h"
 #include <unordered_map>
 // Note that I use #include "MOB_Inchi_Appendix.h" in the text
 
 /* =========================================== */
-strType getInchi(MOL_BOND& mol) {
+strType mol2inchi(MOL_BOND& mol) {
 	int i = -1, k;
 	AT_NUM nAtoms = static_cast<AT_NUM>(mol.Atoms.size());
 	// 1st part of the function is to otbain the inchi_Atom class that 
@@ -16,7 +17,7 @@ strType getInchi(MOL_BOND& mol) {
 	for (auto& atom : mol.Atoms) {
 		i++;
 		#include "MOB_Inchi_Appendix.h" // Note here
-		strcpy_s(inchiMol[i].elname, AtomicSym);
+		strcpy(inchiMol[i].elname, AtomicSym);
 		inchiMol[i].x = 0; // no coordinates
 		inchiMol[i].y = 0; // no coordinates
 		inchiMol[i].z = 0; // no coordinates
