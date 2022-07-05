@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/gojian/Programs/FDL/MolecularAssembly_MC'
-make: Leaving directory '/home/gojian/Programs/FDL/MolecularAssembly_MC'
+make: Entering directory `/Users/gojian/Programs/FDL/MolecularAssembly_MC'
+make: Leaving directory `/Users/gojian/Programs/FDL/MolecularAssembly_MC'
  
 make: *** No targets specified and no makefile found.  Stop.
 
